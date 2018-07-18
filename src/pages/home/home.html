@@ -8,5 +8,36 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-item class="image-section">
+    <img src="{{imgURL}}" class="upload-img" [hidden]="lastImage === null">
+    <h3 [hidden]="lastImage !== null">Please Select Image*: <small>(max size 10MB)</small></h3>
+    <ion-toolbar color="primary">
+      <ion-buttons>
+        <button type="button" ion-button icon-left (click)="presentActionSheet()">
+          <ion-icon name="camera"></ion-icon>Select Image
+        </button>
+        <button type="button" ion-button icon-left (click)="removeImage()" [disabled]="lastImage === null">
+          <ion-icon name="remove-circle"></ion-icon>Remove
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-item>
+  <div *ngIf="lastImage">
+    <ion-item>
+      <label text-wrap>
+        Car Plate: <b>{{carRecognition.number}}</b>
+      </label>
+    </ion-item>
+    <ion-item>
+      <label text-wrap>
+        Confidence: <b>{{carRecognition.confidence}}</b>
+      </label>
+    </ion-item>
+    <ion-item>
+      <button ion-button default (click)="getCarPlate()">Get Car Plate Number</button>
+    </ion-item>
+    <ion-item>
+      <button ion-button default (click)="uploadImage()">Upload Image</button>
+    </ion-item>
+  </div>
 </ion-content>

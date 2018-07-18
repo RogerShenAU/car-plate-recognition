@@ -6,6 +6,11 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { OpenALPR } from '@ionic-native/openalpr';
+import { File } from '@ionic-native/file';
+import { FilePath } from '@ionic-native/file-path';
+import { Transfer } from '@ionic-native/transfer';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    OpenALPR,
+    File,
+    FilePath,
+    Transfer,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
