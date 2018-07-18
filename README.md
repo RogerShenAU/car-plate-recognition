@@ -18,7 +18,7 @@ country: this.openALPR.Country.AU
 Install the app on simulator or mobile, and enjoy the [$86 million app](https://www.caradvice.com.au/350313/victoria-police-to-consider-implementing-86-million-live-video-anpr-system-for-patrol-cars/) :D.
 
 ## Upload to Server
-PHP Accept Image Upload (coming soon...)
+[PHP Accept Image Upload](https://github.com/RogerShenAU/PHP-accept-image-upload)
 
 ## Know Issues with Cordova plugin cordova-plugin-openalpr
 Follow the instructions to fix the plugin issue.
