@@ -51,7 +51,6 @@ export class HomePage {
       let imagePath = cordova.file.dataDirectory + this.lastImage;
       this.openALPR.scan(imagePath, this.scanOptions)
       .then((res: [OpenALPRResult]) => {
-        console.log(JSON.stringify(res));
         this.result = res;
         if(this.result.length == 0 ){
           this.carRecognition = {
