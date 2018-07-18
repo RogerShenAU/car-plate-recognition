@@ -83,6 +83,7 @@
         <string>This app requires access to your photo library to select photo.</string>
     </edit-config>
     <allow-navigation href="http://172.21.130.177:8100" />
+    <allow-navigation href="http://172.21.130.177:8101" />
     <engine name="ios" spec="4.5.4" />
     <plugin name="cordova-plugin-openalpr" spec="^2.0.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
@@ -94,5 +95,4 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.19" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <allow-navigation href="http://172.21.130.177:8101" />
 </widget>
